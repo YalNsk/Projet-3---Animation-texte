@@ -1,0 +1,44 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-boxS;
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+    background-size: 100vw;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+span {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.citation {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    animation: slide 2s forwards;
+    color: rgba(51, 51, 51, 0.015);
+}
+
+
+
+@keyframes slide {
+
+    100% {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #333;
+    }
+}
